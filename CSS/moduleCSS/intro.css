@@ -108,7 +108,9 @@
     }
     .agenda{
         grid-template-columns: 1fr;
-        width: 100%;
+        margin: 2rem  auto;
+        margin-top: 0;
+        
     }
     .agendamento{
         width: 100%;
@@ -118,4 +120,13 @@
     .agendamento p{
         max-width: 15ch;
     }
+    
+    .titulo{
+        padding: 0 20px;
+    }
+    .card{
+        gap: 0;
+        
+    }
+    
  }
