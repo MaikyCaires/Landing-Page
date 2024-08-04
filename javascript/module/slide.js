@@ -40,6 +40,16 @@ function telaCelular(){
                 contador = 0
             }
         }, 2500)
+    }else{
+        slideAuto = setInterval(() =>{
+            const distanciaMovimentada = slideItem[0].getBoundingClientRect().width + 18
+            slideLista.scrollLeft += distanciaMovimentada;
+            contador++
+            if(contador == 5){
+                slideLista.scrollLeft = 0
+                contador = 0
+            }
+        }, 2000)
     }
    
 }

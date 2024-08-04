@@ -5,6 +5,9 @@
    
     
 }
+.servico{
+    margin-bottom: 5rem;
+}
 .container-text-btn{
     display: flex;
     justify-content: space-between;
