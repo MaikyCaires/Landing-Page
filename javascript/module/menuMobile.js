@@ -25,4 +25,3 @@ function fecharMenu(event){
 btn.addEventListener("click", mostrar)
 
 
-console.log(btn)

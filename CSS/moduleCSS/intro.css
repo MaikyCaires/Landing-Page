@@ -87,6 +87,9 @@
     color: #CF7D4E;
     font-size: 1.2rem;
 }
+.section-intro{
+    margin-bottom: 5rem;
+}
 
 @media only screen and (max-width: 800px){
     .container-intro{
