@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 500px 1fr;
 }
-
+.profissional{
+    margin-bottom: 5rem;
+}
 
 .container-img-profissional img{
     width: 400px;
@@ -25,7 +27,7 @@
 }
 .text-profissional{
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     left: 20px;
     background-color: white;
     padding: 15px 30px;
@@ -63,8 +65,12 @@
     display: flex;
     justify-content: space-around;
 }
+.card-profissional-item{
+    flex-shrink: 0;
+    width: 250px;
+}
 .card-profissional-item i{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .card-profissional h3{
     font-family: poppins;
