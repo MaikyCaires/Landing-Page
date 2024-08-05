@@ -134,3 +134,38 @@
     }
     
  }
+
+
+ /*JavaScript*/
+ .container-intro-img{
+    opacity: 0;
+ }
+
+ .mostrar-img{
+    animation: show-right 0.5s forwards;
+ }
+
+
+ @keyframes show-right{
+    from{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+ /*Javascript*/
+
+ .titulo p{
+    opacity: 0;
+ }
+ .titulo h1{
+    opacity: 0;
+ }
+
+ .mostrar-texto{
+    animation: show-right 0.5s forwards;
+ }
