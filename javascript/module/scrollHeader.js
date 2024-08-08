@@ -50,13 +50,28 @@ function mostrarScrollFormação() {
   }
 }
 //
+//função para versao PC
+function mostrarTextIntro(){
+  mulherLoira.classList.add("mostrar-img");
+  textIntro.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("mostrar-texto");
+    }, 500 * index);
+  });
+  
+}
+
+
 function telaCelular() {
   if (window.outerWidth <= 800) {
     mostrar()
     window.addEventListener("scroll", mostrarScroll);
     window.addEventListener("scroll", mostrarScrollFormação)
     window.addEventListener("scroll", mostrarDadosDr);
+  }else{
+    mostrarTextIntro()
   }
 }
 
 window.addEventListener("load", telaCelular);
+
