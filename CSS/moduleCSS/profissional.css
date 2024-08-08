@@ -134,6 +134,9 @@
     .text-profissional{
         bottom: 40px;
     }
+    .fotoDr, .tituloDr{
+        opacity: 0;
+    }
 }
 
 

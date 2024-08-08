@@ -7,6 +7,8 @@ const slideProximo = document.querySelector('[data-slide="btn-proximo"]')
 let slideAuto
 
 let contador = 0
+let maximoClick = 0
+
 
 function proximo(event){
     limparIniciarInterval()
@@ -14,7 +16,7 @@ function proximo(event){
     slideLista.scrollLeft += distanciaMovimentada;
     console.log(distanciaMovimentada)
     contador++
-    if(contador == 5){
+    if(contador == maximoClick){
         slideLista.scrollLeft = 0
         contador = 0
     }
@@ -35,7 +37,7 @@ function telaCelular(){
             const distanciaMovimentada = slideItem[0].getBoundingClientRect().width + 18
             slideLista.scrollLeft += distanciaMovimentada;
             contador++
-            if(contador == 5){
+            if(contador == maximoClick){
                 slideLista.scrollLeft = 0
                 contador = 0
             }
@@ -45,7 +47,7 @@ function telaCelular(){
             const distanciaMovimentada = slideItem[0].getBoundingClientRect().width + 18
             slideLista.scrollLeft += distanciaMovimentada;
             contador++
-            if(contador == 5){
+            if(contador == maximoClick){
                 slideLista.scrollLeft = 0
                 contador = 0
             }
@@ -59,7 +61,7 @@ function limparIniciarInterval(){
         const distanciaMovimentada = slideItem[0].getBoundingClientRect().width + 18
         slideLista.scrollLeft += distanciaMovimentada;
         contador++
-        if(contador == 5){
+        if(contador == maximoClick){
             slideLista.scrollLeft = 0
             contador = 0
         }
@@ -67,9 +69,19 @@ function limparIniciarInterval(){
 }
 
 
+function numeroClick(){
+    if(window.outerWidth <= 800){
+        maximoClick = 5
+    }else{
+        maximoClick = 3
+    }
+}
+
 slideProximo.addEventListener("click", proximo)
 slideVoltar.addEventListener("click", voltar)
+window.addEventListener("load", numeroClick)
 window.addEventListener("load", telaCelular)
+
 
 
 }

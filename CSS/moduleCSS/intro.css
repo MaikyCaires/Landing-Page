@@ -132,15 +132,22 @@
         gap: 0;
         
     }
+    .container-intro-img{
+    opacity: 0;
+ }
+ .titulo p{
+    opacity: 0;
+ }
+ .titulo h1{
+    opacity: 0;
+ }
+
     
  }
 
 
  /*JavaScript*/
- .container-intro-img{
-    opacity: 0;
- }
-
+ 
  .mostrar-img{
     animation: show-right 0.5s forwards;
  }
@@ -159,12 +166,7 @@
 
  /*Javascript*/
 
- .titulo p{
-    opacity: 0;
- }
- .titulo h1{
-    opacity: 0;
- }
+ 
 
  .mostrar-texto{
     animation: show-right 0.5s forwards;
